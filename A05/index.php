@@ -246,7 +246,7 @@ include 'fetch_data.php';
                 echo '
                     <div class="w3-container w3-content w3-center" style="max-width:1300px; padding-top:30px; margin-top:20px;" id="' . $islandIds[$index] . '">
                         <h2 class="w3-wide" style="color:' . $color . ';"><b>' . $islandName . ' Island</b></h2>
-                        <p class="w3-opacity w3-text-grey"><i>' . $shortDescription . '</i></p>
+                        <p class="w3-opacity w3-text-white"><i>' . $shortDescription . '</i></p>
                         <img src="' . $imagePath . '" class="w3-greyscale w3-hover-shadow" style="width:70%; margin:20px 0;">
                         <p class="w3-justify w3-padding-small w3-text-white">' . $longDescription . '</p>';
 
