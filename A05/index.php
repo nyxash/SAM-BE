@@ -16,7 +16,7 @@ include 'fetch_data.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background-color: black;
+            background-color: rgb(50, 50, 71);
         }
 
         body,
@@ -177,8 +177,8 @@ include 'fetch_data.php';
     </nav>
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-    <nav class="w3-sidebar w3-animate-right w3-xxlarge"
-        style="display:none;padding-top:230px;right:0;z-index:2; background-color:#655C9E;" id="mySidebar">
+    <nav class="w3-sidebar w3-animate-right w3-xxlarge w3-black"
+        style="display:none;padding-top:230px;right:0;z-index:2;" id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-xxxlarge w3-display-topright"
             style="padding:0 12px;">
             <i class="fa fa-remove"></i>
@@ -197,8 +197,8 @@ include 'fetch_data.php';
     <div class="w3-main w3-padding-large" style="margin-left:40%">
 
         <!-- Menu icon to open sidebar -->
-        <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
-            onclick="openNav()"><i class="fa fa-bars"></i></span>
+        <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black"
+            style="width:auto;right:0; color:#1a1ae2;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
         <!-- Header -->
         <header class="w3-container w3-center w3-text-white" style="padding:128px 16px" id="home">
@@ -210,8 +210,8 @@ include 'fetch_data.php';
         </header>
 
         <!-- About Section -->
-        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-            <h2>About</h2>
+        <div class="w3-content w3-justify w3-padding-32" id="about">
+            <h2 class="w3-text-white w3-opacity">About</h2>
             <hr class="w3-opacity">
             <p class="w3-text-white">Welcome to a journey through my mind! This website is a collection of islands, each
                 one representing a
@@ -228,7 +228,7 @@ include 'fetch_data.php';
 
         <!-- Island of Personality -->
         <div class="w3-padding-32 w3-content" id="island">
-            <h2 class="w3-text-grey">My Island Of Personality</h2>
+            <h2 class="w3-text-white w3-opacity">My Island Of Personality</h2>
             <hr class="w3-opacity">
 
             <?php
