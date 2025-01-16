@@ -21,10 +21,13 @@ body {
 
 .titleFont {
     font-family: Impact, sans-serif;
+    font-size: 3.5rem;
 }
 
-.fontDosis {
-    font-family: "Dosis", sans-serif;
+@media (max-width: 768px) {
+    .titleFont {
+        font-size: 2rem;
+    }
 }
 
 #loading {
@@ -440,16 +443,27 @@ body {
 
 footer {
     background-color: #0c0c0c;
-    color: #6c757d;
+    color: white;
     height: 100%;
 }
 
 footer img {
-    max-height: 50px;
+    max-height: 40px;
 }
 
-footer p {
-    font-size: 0.8rem;
+footer .footerName p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    footer img {
+        max-height: 30px;
+    }
+
+    footer .footerName p {
+        font-size: 0.9rem;
+    }
 }
 
 footer ul {
@@ -477,7 +491,7 @@ footer ul li a:hover {
 }
 
 footer .contactIcons a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffff;
     margin-right: 10px;
     transition: color 0.3s ease;
@@ -485,4 +499,9 @@ footer .contactIcons a {
 
 footer .contactIcons a:hover {
     color: #858585;
+}
+
+footer .copyRight {
+    color: #858585;
+    font-size: 1rem;
 }
