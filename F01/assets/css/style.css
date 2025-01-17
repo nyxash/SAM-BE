@@ -148,9 +148,9 @@ body {
 }
 
 .aboutP {
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .missionPurpose {
@@ -159,7 +159,8 @@ body {
 }
 
 .missionPurpose p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 0 38px;
 }
 
 .missionHr,
@@ -168,7 +169,6 @@ body {
     margin: auto;
     opacity: 100%;
     width: 90%;
-    padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -180,7 +180,7 @@ body {
 
     .aboutDuplicate {
         position: relative;
-        top: 40px;
+        top: 50px;
         font-size: 4rem;
     }
 
@@ -192,8 +192,9 @@ body {
         font-size: 0.9rem;
     }
 
-    .missionPurpose {
+    .missionPurpose, .missionPurpose p {
         padding: 0px;
+        font-size: 0.9rem;
     }
 
     .purpose {
@@ -441,6 +442,12 @@ body {
     margin: auto;
 }
 
+@media (max-width: 767px) {
+    .quoteText {
+        font-size: 2.1rem;
+    }
+}
+
 footer {
     background-color: #0c0c0c;
     color: white;
@@ -457,12 +464,18 @@ footer .footerName p {
 }
 
 @media (max-width: 768px) {
+    footer .footerName {
+        padding-bottom: 20px;
+    }
+
     footer img {
         max-height: 30px;
     }
 
     footer .footerName p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        text-align: left;
+        font-weight: 600;
     }
 }
 
