@@ -16,6 +16,38 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/olympic.png" alt="Olympic Triumphs Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#medalists">Medalists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#article">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#moments">Moments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div id="loading">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -38,7 +70,7 @@
     </section>
 
     <section>
-        <div class="container-fluid py-2" style="background-color: #c9b500; display:block;"></div>
+        <div class="container-fluid py-2" style="background-color: #00287f; display:block;"></div>
     </section>
 
     <!-- Section 2: About -->
@@ -71,22 +103,18 @@
                     <h3 class="fw-bold text-center">Mission</h3>
                     <hr class="missionHr">
                     <p>
-                    <p>
                         To support and promote Filipino athletes by showcasing their victories, fostering national
                         pride, and encouraging the next generation of sports enthusiasts to reach for excellence in
                         their chosen fields.
-                    </p>
                     </p>
                 </div>
                 <div class="col-md-6 col-12 purpose">
                     <h3 class="fw-bold text-center">Purpose</h3>
                     <hr class="purposeHr">
                     <p>
-                    <p>
                         To highlight the triumphs and challenges of Philippine sports, building awareness and
                         appreciation for the hard work and sacrifices of our athletes while uniting Filipinos through
                         shared moments of pride and joy.
-                    </p>
                     </p>
                 </div>
             </div>
@@ -170,45 +198,36 @@
         </div>
     </section>
 
-    <!-- Section 5: Unforgettable Moments -->
+    <!-- Section 5: Moments -->
     <section id="moments" class="py-5 text-white momentSection">
-        <div class="container text-center">
-            <h2 class="titleFont mb-4">Unforgettable Moments</h2>
-            <p class="momentsP mb-4">
-                Relive the most inspiring moments of Filipino athletes as they triumphed on the global stage. Celebrate
-                the victories that brought pride and joy to the Philippines.
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="momentTitle titleFont mb3">
+                        <span class="verticalUnderline"></span> WINNING<br>MOMENTS
+                    </h2>
+                    <p class="momentsP">
+                        Relive the most inspiring moments of Filipino athletes as they triumphed on the global stage.
+                        Celebrate the victories that brought pride and joy to the Philippines.
+                    </p>
+                </div>
 
-            <div class="mb-4 d-flex justify-content-center">
-                <div class="grid row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid1.jpeg" class="img-fluid rounded" alt="Historic Olympic Win 1">
+                <div class="col-lg-8">
+                    <div class="gallery">
+                        <div class="gallery-item medium">
+                            <img src="assets/img/grid1.jpg" class="img-fluid" alt="Historic Olympic Win 1">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid2.jpg" class="img-fluid rounded" alt="Historic Olympic Win 2">
+                        <div class="gallery-item medium">
+                            <img src="assets/img/grid2.jpg" class="img-fluid" alt="Historic Olympic Win 2">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid3.jpg" class="img-fluid rounded" alt="Historic Olympic Win 3">
+                        <div class="gallery-item medium">
+                            <img src="assets/img/grid3.jpeg" class="img-fluid" alt="Historic Olympic Win 3">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid4.jpg" class="img-fluid rounded" alt="Historic Olympic Win 4">
+                        <div class="gallery-item large">
+                            <img src="assets/img/grid4.jpg" class="img-fluid" alt="Historic Olympic Win 4">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid5.jpg" class="img-fluid rounded" alt="Historic Olympic Win 5">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card gallery-item">
-                            <img src="assets/img/grid6.jpeg" class="img-fluid rounded" alt="Historic Olympic Win 6">
+                        <div class="gallery-item small">
+                            <img src="assets/img/grid5.jpg" class="img-fluid" alt="Historic Olympic Win 5">
                         </div>
                     </div>
                 </div>
@@ -217,47 +236,57 @@
     </section>
 
     <!-- Section 6: Medal Tally -->
-    <section id="medalTally" class="medalTally py-5 my-5 text-center">
-        <h2 class="titleFont">Philippine Medal Tally</h2>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="cardBody">
-                            <img src="assets/img/gold.png" alt="Gold Medal">
-                            <h5 class="cardTitle">Gold</h5>
-                            <p id="goldMedal" class="display-4">3</p>
+    <section id="medalTally" class="medalTally py-5 text-center">
+        <div class="container tallyContent my-5">
+            <div class="medalTitle d-flex justify-content-center mb-5">
+                <div class="customLine"></div>
+                <h2 class="mx-5 text-uppercase titleFont">Philippine Medal Tally</h2>
+                <div class="customLine"></div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="cardBody">
+                                <img src="assets/img/gold.png" alt="Gold Medal" class="medalImg">
+                                <h5 class="cardTitle">Gold</h5>
+                                <p id="goldMedal" class="display-4">3</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="cardBody">
-                            <img src="assets/img/silver.png" alt="Silver Medal">
-                            <h5 class="card-title">Silver</h5>
-                            <p id="silverMedal" class="display-4">5</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="cardBody">
+                                <img src="assets/img/silver.png" alt="Silver Medal" class="medalImg">
+                                <h5 class="card-title">Silver</h5>
+                                <p id="silverMedal" class="display-4">5</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="cardBody">
-                            <img src="assets/img/bronze.png" alt="Bronze Medal">
-                            <h5 class="cardTitle">Bronze</h5>
-                            <p id="bronzeMedal" class="display-4">10</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="cardBody">
+                                <img src="assets/img/bronze.png" alt="Bronze Medal" class="medalImg">
+                                <h5 class="cardTitle">Bronze</h5>
+                                <p id="bronzeMedal" class="display-4">10</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Section 7: Quote -->
-    <section id="quote" class="quote py-5 text-center titleFont">
-        <div class="container">
-            <h2 class="quoteText">
-                "Once an Olympian, Always an Olympian."
-            </h2>
+    <section id="quote" class="quote">
+        <div class="row no-gutters">
+            <div class="col-5 d-flex justify-content-center align-items-center">
+            </div>
+            <div class="col-7 position-relative">
+                <h2 class="titleFont quoteText">
+                    "Once an Olympian,<br>Always an Olympian"
+                </h2>
+                <img src="assets/img/olympic.png" alt="Logo" class="logo">
+            </div>
         </div>
     </section>
 
@@ -284,8 +313,9 @@
                 <div class="contactFooter col-md-3">
                     <p class="mb-2 fw-bold">Contact Info</p>
                     <div class="contactIcons">
-                        <a href="https://www.facebook.com/OlympicPHI"target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/olympic.ph/"target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/OlympicPHI" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/olympic.ph/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
                     </div>
                     <p class="mt-2 mb-0">Email: noc-phi@olympic.ph</p>
                 </div>

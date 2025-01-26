@@ -1,3 +1,15 @@
+  // Toggle navbar background on scroll
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.remove('transparent');
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+        navbar.classList.add('transparent');
+    }
+});
+
 window.addEventListener('load', function () {
     document.getElementById('loading').classList.add('hidden');
 });
